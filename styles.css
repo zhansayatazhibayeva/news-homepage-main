@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.header{
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.navbar a{
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    margin-left: 40px;
+    color:hsl(236, 13%, 42%);
+}
+.header .navbar a:hover{
+    color: hsl(35, 77%, 62%);
+}
+body{
+    max-width: 1100px;
+    margin: auto;
+    font-family: 'Inter',sans-serif;
+}
+
+article{
+    margin: 1rem 0;
+}
+.info-card{
+    background-color: hsl(240, 100%, 5%);
+    margin-bottom: 1rem;
+    place-items: center;
+    color: hsl(36, 100%, 99%);
+    padding: 1.5rem;
+    line-height: 2rem;
+}
+.info-card h2{
+    color:hsl(35, 77%, 62%);
+    font-size: 2rem;
+}
+.info-card span{
+    font-weight: 300;
+    opacity: 0.75;
+}
+.info-card h3:hover{
+    color:hsl(35, 77%, 62%);
+}
+.showcase > div:last-child article:not(:last-child){
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+.showcase > div:last-child h3{
+    margin-bottom: 0.5rem;
+
+}
+.showcase > div:last-child{
+    width: 26em;
+}
+.showcase p{
+    margin-bottom: 1rem;
+}
+.showcase button{
+    padding: 1rem 2rem;
+    border: none;
+    color:  hsl(240, 100%, 5%);
+    background-color: hsl(5, 85%, 63%);
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.showcase button:hover{
+    color: #fff;
+    background-color: hsl(240, 100%, 5%);;
+}
+.row{
+    display: flex;
+    gap: 1rem;
+}
+.cards{
+    margin-bottom: 1.25rem;
+    line-height: 2rem;
+}
+.cards img{
+    width: 125px;
+}
+.cards h2{
+    color: hsl(5, 85%, 63%);
+    font-size: 2rem;
+}
+.cards h4{
+    color:hsl(240, 100%, 5%);
+    font-weight:800;
+}
+.cards span{
+    color:hsl(236, 13%, 42%);
+    opacity: 0.75;
+}
+@media (min-width: 1024px){
+    .showcase{
+        display: flex;
+        gap: 2rem;
+    }
+    .showcase div img{
+        width: 50em;
+    }
+    .showcase h1{
+        font-size: 3rem;
+    }
+    .showcase > div:first-child article{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        place-items: center;
+        max-width: 800px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
